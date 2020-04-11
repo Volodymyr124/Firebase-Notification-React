@@ -18,7 +18,6 @@ import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 import SendIcon from '@material-ui/icons/Send';
 import FilterListIcon from '@material-ui/icons/FilterList';
-import { withStyles } from "@material-ui/styles";
 import { connect } from "react-redux";
 import TextField from '@material-ui/core/TextField';
 

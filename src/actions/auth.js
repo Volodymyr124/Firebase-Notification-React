@@ -144,6 +144,7 @@ export const verifyAuth = () => dispatch => {
             dispatch(receiveLogin(user));
             myFirebase.messaging().getToken()
             .then( function( token ) {
+                console.log(token)
                 myFirebase.database().ref("users/" + user.uid + "/token").set(token)
                 myFirebase.database().ref("users").on('value', function(snapshot) {
                     var users = []
