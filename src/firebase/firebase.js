@@ -30,7 +30,7 @@ messaging.requestPermission()
 })
 
 messaging.onMessage( (payLoad) => {
-  const title = payLoad.data.title
-  alert(title + "\n" + payLoad.data.notifictiona)
   console.log(payLoad)
+  const title = payLoad.data.title
+  alert(title + "\n" + payLoad.data.body)
 })
